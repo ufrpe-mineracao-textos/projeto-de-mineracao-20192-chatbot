@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 import os
 
-path = ''
-#data_list = os.listdir(path)
+PATH = ''
+# data_list = os.listdir(path)
 
 
 data = pd.read_csv('text-label.csv', encoding='utf8', index_col=False)
@@ -33,5 +33,3 @@ for label in data_label:
     print("TF-IDF shape: ", tf_idf_vec.shape)
 
     tf_idf_dic[label] = tf_idf_vec
-
-
