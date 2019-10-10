@@ -1,7 +1,10 @@
-# Native-Language-Classification
-The main proporse of this project is to develop an application that is able to identify and classify 26 Brazilian native languages. 
+# Chatbot - Escolha de disciplinas
 
-The dataset consists of 27 samples of the New Testament from the Holy Bible. The [indigenous](https://myswordbrasil.blogspot.com/2016/09/26-biblias-em-idiomas-indigenas-tupi-guarani.htm) and the [portuguese](https://myswordbrasil.blogspot.com/2017/06/biblias-para-mysword.html) version of the New Testament were found at My Sword Brasil.
+## Descrição
+O objetivo deste projeto será o desenvolvimento de um Chatbot que auxilie os alunos de Ciência da Computação no processo de matrícula.
 
-
-This is important to note that it was necessary to preprocess the verses of the bible removing some characters (i.e [] () <>) and align the verses, because the original Bibles have some collapsed verses, but they are not the same at all of them. (Befurcated neural networks)
+## Grupo
+1. Alex
+2. Igor
+3. [Ikaro](http://github.com/IkaroAlef)
+4. Thiago
