@@ -3,7 +3,7 @@ os.system("pip install chatterbot")
 os.system("pip install chatterbot-corpus")
 from chatterbot.trainers import ListTrainer
 from chatterbot import ChatBot
-from chatterbot.trainers import ChatterBotCorpusTrainer
+#from chatterbot.trainers import ChatterBotCorpusTrainer
 #from chatterbot import chatterbot_corpus
 
 bot = ChatBot('TW Chat Bot')
