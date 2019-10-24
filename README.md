@@ -1,4 +1,4 @@
-# Chatbot - FAQ cursos BCC e LC
+# Chatbot - FAQ cursos Bacharelado em Ciência da Computação e Licenciatura em Computação
 
 ## Descrição
 O objetivo deste projeto será o desenvolvimento de um Chatbot que auxilie os alunos de Ciência da Computação no processo de matrícula.
