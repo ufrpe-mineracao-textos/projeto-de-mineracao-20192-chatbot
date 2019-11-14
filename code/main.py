@@ -3,8 +3,17 @@ import os
 #os.system("pip install chatterbot-corpus")
 from chatterbot.trainers import ListTrainer, ChatterBotCorpusTrainer
 from chatterbot import ChatBot
+import pymongo
 #from chatterbot.trainers import ChatterBotCorpusTrainer
 #from chatterbot import chatterbot_corpus
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+
+mydb = myclient["chatbot"]
+mycol = mydb["chatbot"]
+conversa = []
+for x in mycol.find():
+  conversa.append(x['input'])
+  conversa.append(x['output'])
 
 bot = ChatBot(
     'TW Chat Bot',
@@ -13,10 +22,10 @@ bot = ChatBot(
     #database_uri='mongodb://localhost:27017/faq'
     )
 
-#conversa = ['Oi', 'Olá', 'Tudo bem?', 'Tudo ótimo', 'Você gosta de programar?', 'Sim, eu programo em Python']
-#trainer = ListTrainer(bot)
+trainerList = ListTrainer(bot)
 trainer = ChatterBotCorpusTrainer(bot)
 trainer.train("chatterbot.corpus.Portuguese")
+trainerList.train(conversa)
 
 while True:
     pergunta = input("Usuário: ")
