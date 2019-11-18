@@ -1,1 +1,2 @@
  mongoimport --db=faq --collection=bcc --type json --file=D:\git\projeto-de-mineracao-20192-native-language-classification\dump_bd_mongoDB.json --jsonArray
+ mongorestore -d chatbot -c chatbot D:/git/projeto-de-mineracao-20192-native-language-classification/Banco/chatbot.bson
